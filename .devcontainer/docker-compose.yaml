@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  rust-the-book:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        GIT_NAME: ${GIT_NAME}
+        GIT_EMAIL: ${GIT_EMAIL}
+    tty: true
+    working_dir: /usr/src
+    volumes:
+      - ..:/usr/src:cached
