@@ -7,4 +7,8 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnSave": true
   },
+  "rust-analyzer.linkedProjects": [
+    "projects/hello_cargo/Cargo.toml",
+    "projects/guessing_game/Cargo.toml"
+  ],
 }
