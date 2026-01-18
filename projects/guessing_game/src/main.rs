@@ -6,6 +6,7 @@ fn main() {
     println!("Guess the number!");
 
     let secret_number = rand::rng().random_range(1..=100);
+    let mut clear_count = 0;
 
     loop {
         println!("Please input your guess.");
@@ -23,6 +24,7 @@ fn main() {
         };
 
         println!("You guessed: {guess}");
+        clear_count += 1;
 
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
@@ -33,5 +35,5 @@ fn main() {
             }
         }
     }
-    println!("Secret number: {secret_number}");
+    println!("Clear Count: {clear_count}");
 }
