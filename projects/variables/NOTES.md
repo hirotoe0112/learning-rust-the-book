@@ -1,0 +1,4 @@
+- The difference between variables and constants
+  - The `mut` keyword can't used with a constant
+  - The type of a constant must be annotated
+  - Only a value that can be evaluated at compile time can be set to a constant
