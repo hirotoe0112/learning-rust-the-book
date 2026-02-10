@@ -2,3 +2,20 @@
   - The `mut` keyword can't used with a constant
   - The type of a constant must be annotated
   - Only a value that can be evaluated at compile time can be set to a constant
+- Data Types
+  - Scalar
+    - integer
+      - without fraction
+      - start with `i`: signed (include negative number)
+      - start with `u`: unsigned (only positive number)
+      - To address overflow, `wrapping_*`, `checked_*`, `overflowing_*`, and `saturating_*` methods can be used.
+    - floating-point number
+      - default: f64
+      - f32 is also available.
+    - Boolean
+    - character
+  - Compound
+    - tuple
+      - fixed length
+    - array
+      - fixed length
