@@ -9,6 +9,7 @@
   },
   "rust-analyzer.linkedProjects": [
     "projects/hello_cargo/Cargo.toml",
-    "projects/guessing_game/Cargo.toml"
+    "projects/guessing_game/Cargo.toml",
+    "projects/variables/Cargo.toml"
   ],
 }
